@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Authorization code</title>
+<body style="font:16px sans-serif;max-width:640px;margin:40px auto;padding:0 16px">
+<h1>Authorization received</h1>
+<p>Copy this code and paste it in the terminal:</p>
+<pre id="c" style="white-space:pre-wrap;word-break:break-all;background:#eee;padding:12px"></pre>
+<script>const p=new URLSearchParams(location.search);document.getElementById('c').textContent=p.get('code')||p.get('error_description')||'No code in URL';</script>
+</body></html>
